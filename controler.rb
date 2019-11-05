@@ -12,7 +12,13 @@ end
 
 get '/films/:num' do
 
-  @films = Film.all
   @num = params[:num].to_i
+
+  @fil = Film.film(@num)
+
+  @film_name = @fil.title
+
+  @film_price= @fil.price
+
   erb(:anchor_tags)
 end

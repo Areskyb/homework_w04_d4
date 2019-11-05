@@ -42,6 +42,16 @@ class Film
     return customers.count
   end
 
+  def self.film(id)
+    sql = "SELECT *
+    FROM films
+    WHERE films.id = $1"
+    values = [id]
+    film_data = SqlRunner.run(sql, values)
+    film = Film.map_items(film_data).first
+    return film
+  end
+
   def self.all()
     sql = "SELECT * FROM films"
     film_data = SqlRunner.run(sql)
@@ -63,6 +73,7 @@ class Film
     result = film_data.map { |film| Film.new( film ) }
     return result
   end
+
 
 
 end
