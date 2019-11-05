@@ -18,5 +18,19 @@ ul{
 }
 
 li {
+  color: inherit;
 border-bottom: 1px solid rgb(173, 159, 154);
+}
+
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:white; 
+     text-decoration:none;
+     cursor:pointer;
 }

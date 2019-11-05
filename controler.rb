@@ -13,6 +13,6 @@ end
 get '/films/:num' do
 
   @films = Film.all
-  @num = [:num].to_i
+  @num = params[:num].to_i
   erb(:anchor_tags)
 end

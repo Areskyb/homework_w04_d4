@@ -2,7 +2,7 @@
 <ul class="center">
 <% for film in @films %>
 
-<li><%= film.title %></li>
+<li> <a href="films/<%=film.id%>"><%= film.title %></a></li>
 
 <% end %>
 
