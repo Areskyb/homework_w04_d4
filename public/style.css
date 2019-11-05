@@ -1,15 +1,21 @@
 body{
-  background-color: rgb(130, 157, 167);
-  align-items: center;
-  justify-content: center;
+  background-color: #110133;
+  font-family: sans-serif;
+  font-weight: 400;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
+h1{
+  color: #ffdc34;
 
-  padding: 10px;
 }
+
+h2{
+ color: #4dd599;
+ font-weight: 400;
+ 
+}
+
+
 ul{
   list-style: none;
   color: white;
@@ -19,7 +25,8 @@ ul{
 
 li {
   color: inherit;
-border-bottom: 1px solid rgb(173, 159, 154);
+  border-bottom: 1px solid #00918e;
+  margin-right: 40%
 }
 
 
@@ -32,4 +39,17 @@ a:hover
      color:white;
      text-decoration:none;
      cursor:pointer;
+}
+
+.anchor_tags{
+  width: 200px;
+ height: 100px;
+ margin: auto;
+ padding: 10%
+}
+
+.center {
+  margin: auto;
+  width: auto;
+  padding: 20%;
 }
